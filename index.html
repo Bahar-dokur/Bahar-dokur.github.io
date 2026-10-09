@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahar Dokur | Software Engineer</title>
+  <meta name="description" content="Bahar Dokur - Software Engineering student at Yaşar University. Backend, mobile and web development with Java/Spring Boot, .NET and Flutter.">
+  <link rel="icon" href="assets/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#about" class="logo">Bahar Dokur</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / ABOUT ============ -->
+    <section id="about" class="hero container">
+      <img class="hero-photo" src="assets/profile.jpg" alt="Portrait of Bahar Dokur" width="600" height="600">
+      <p class="hello">Hi, I'm</p>
+      <h1>Bahar Dokur</h1>
+      <p class="role">Software Engineering Student · Backend &amp; Mobile Developer</p>
+      <p class="lead">Fourth-year Software Engineering student at Yaşar University in İzmir. I build backend, mobile and web applications with Java/Spring Boot, .NET and Flutter, and I enjoy tracking down tricky production issues, designing database-backed systems and adding the tests that keep bugs from coming back.</p>
+      <div class="buttons">
+        <a class="btn primary" href="assets/Bahar_Dokur_CV.pdf" download>Download CV</a>
+        <a class="btn" href="https://github.com/Bahar-dokur" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/bahardokur-0b6979270" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ============ 01 EDUCATION ============ -->
+    <section id="education" class="section container">
+      <h2><span class="num">01</span>Education</h2>
+      <div class="timeline">
+        <article class="item">
+          <div class="item-head">
+            <h3>B.Sc. in Software Engineering</h3>
+            <span class="date">Expected 2027</span>
+          </div>
+          <p class="org">Yaşar University · İzmir</p>
+          <p>Relevant coursework: Object-Oriented Programming, Software Architecture, Design Patterns, Software Testing, Database Design.</p>
+        </article>
+        <article class="item">
+          <div class="item-head">
+            <h3>Science High School</h3>
+            <span class="date">Graduated 2020</span>
+          </div>
+          <p class="org">Şehit Mustafa Serin Science High School · Balıkesir</p>
+          <p>GPA: 90.2 / 100</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 02 EXPERIENCE ============ -->
+    <section id="experience" class="section container">
+      <h2><span class="num">02</span>Experience</h2>
+      <div class="timeline">
+        <article class="item">
+          <div class="item-head">
+            <h3>Mobile &amp; Backend Developer (Remote)</h3>
+            <span class="date">Jun 2026 – Oct 2026</span>
+          </div>
+          <p class="org">Pixel Yazılım · Konya</p>
+          <ul>
+            <li>Traced a notification-targeting defect missed in local and TestFlight testing to FCM token lifecycle behavior on Android.</li>
+            <li>Replaced client-declared FCM topics with server-controlled device-token targeting and object-level authorization; deployed to production.</li>
+            <li>Added multi-device support with atomic MongoDB updates and wrote the project's first xUnit regression suite.</li>
+            <li>Built the return flow across mobile and backend; fixed multi-warehouse duplicate counting in the End-of-Day report.</li>
+          </ul>
+          <ul class="chips"><li>Flutter</li><li>.NET 8</li><li>ASP.NET Core</li><li>MongoDB</li><li>FCM</li><li>xUnit</li></ul>
+        </article>
+        <article class="item">
+          <div class="item-head">
+            <h3>Software Development Intern</h3>
+            <span class="date">Jul 2026 – Aug 2026</span>
+          </div>
+          <p class="org">Yaşar Bilgi Sistem · İzmir</p>
+          <ul>
+            <li>Worked in a six-person team on a web-based Meeting Room Management System, across backend and frontend.</li>
+            <li>Implemented role-based authorization and permission management with Flyway migrations on PostgreSQL.</li>
+            <li>Contributed to reservation workflows, calendar availability and Excel-based user onboarding.</li>
+          </ul>
+          <ul class="chips"><li>Java</li><li>Spring Boot</li><li>React</li><li>PostgreSQL</li><li>Flyway</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 03 PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <h2><span class="num">03</span>Projects</h2>
+
+      <!-- FEATURED PROJECT: video + image gallery -->
+      <article class="featured">
+        <div class="featured-media">
+          <!-- Put your demo at assets/videos/senior-project-demo.mp4 (under ~50 MB) -->
+          <video controls preload="metadata" poster="assets/projects/senior-project.svg">
+            <source src="assets/videos/senior-project-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="gallery">
+            <!-- Replace each .svg with your own screenshot (.png / .jpg) -->
+            <img src="assets/projects/senior-1.svg" alt="Senior Project screenshot 1" loading="lazy">
+            <img src="assets/projects/senior-2.svg" alt="Senior Project screenshot 2" loading="lazy">
+            <img src="assets/projects/senior-3.svg" alt="Senior Project screenshot 3" loading="lazy">
+            <img src="assets/projects/senior-4.svg" alt="Senior Project screenshot 4" loading="lazy">
+            <img src="assets/projects/senior-5.svg" alt="Senior Project screenshot 5" loading="lazy">
+          </div>
+        </div>
+        <div class="featured-body">
+          <p class="label">Featured project</p>
+          <h3>Senior Project Management &amp; Evaluation System</h3>
+          <p>A web platform that runs the senior project process end to end, with separate role-based workflows for students, advisors, committees and administrators.</p>
+          <ul>
+            <li>Integrated JIRA and GitHub APIs for sprint tracking, issue monitoring and contribution analysis.</li>
+            <li>Implemented JWT/bcrypt authentication and authorization.</li>
+            <li>Designed the database models plus submission and evaluation flows.</li>
+            <li>Automated frontend and end-to-end tests with Jest, Testing Library and Playwright.</li>
+          </ul>
+          <ul class="chips"><li>React</li><li>REST APIs</li><li>JWT</li><li>Jest</li><li>Playwright</li></ul>
+          <div class="links">
+            <a href="https://YOUR-LIVE-DEMO-LINK" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="grid">
+        <article class="card">
+          <img src="assets/projects/icecek-dukkani.svg" alt="İçecek Dükkanı app screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>İçecek Dükkanı – Ordering &amp; Distribution Platform</h3>
+            <p>Customer and field-staff mobile apps, an admin panel and a central .NET API for orders, returns, deposits and distribution. Professional work at Pixel Yazılım.</p>
+            <ul class="chips"><li>Flutter</li><li>.NET 8</li><li>MongoDB</li><li>FCM</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/projects/meeting-room.svg" alt="Meeting Room Management System screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>Meeting Room Management System</h3>
+            <p>Reservation workflows, calendar-based availability and role/permission management, built during my internship at Yaşar Bilgi Sistem.</p>
+            <ul class="chips"><li>Spring Boot</li><li>React</li><li>PostgreSQL</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/projects/tea-maker.svg" alt="Tea Maker desktop application screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>Design Pattern-Driven Tea Maker</h3>
+            <p>Java desktop app using MVC, State, Decorator and Observer patterns, with MySQL-backed consumption data and timer-based state transitions.</p>
+            <ul class="chips"><li>Java</li><li>MySQL</li><li>Design Patterns</li></ul>
+            <div class="links"><a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/projects/mylibrary.svg" alt="MyLibrary application screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>MyLibrary – Personal Book Tracker</h3>
+            <p>Java Swing app with authentication, role-based access, CRUD operations and author-book relationships, documented with UML diagrams and an SRS.</p>
+            <ul class="chips"><li>Java Swing</li><li>MySQL</li><li>UML</li></ul>
+            <div class="links"><a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/projects/izmirim-kart.svg" alt="İzmirim Kart test results" loading="lazy">
+          <div class="card-body">
+            <h3>İzmirim Kart Web Testing</h3>
+            <p>Automated unit and UI tests with JUnit and Selenium, applying Boundary Value Analysis and Equivalence Partitioning to authentication and balance operations.</p>
+            <ul class="chips"><li>JUnit</li><li>Selenium</li><li>Test Design</li></ul>
+            <div class="links"><a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/projects/bird-observation.svg" alt="Bird Observation database diagram" loading="lazy">
+          <div class="card-body">
+            <h3>Bird Observation &amp; Species Database</h3>
+            <p>Normalized relational database for species and observations, with multi-entity schema design and SQL queries for reporting.</p>
+            <ul class="chips"><li>SQL</li><li>Database Design</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 04 SKILLS ============ -->
+    <section id="skills" class="section container">
+      <h2><span class="num">04</span>Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Java, C#, Dart, C++, C, SQL</dd></div>
+        <div><dt>Backend &amp; APIs</dt><dd>Spring Boot, .NET 8, ASP.NET Core, REST APIs, JWT</dd></div>
+        <div><dt>Mobile &amp; Frontend</dt><dd>Flutter, React</dd></div>
+        <div><dt>Databases</dt><dd>PostgreSQL, MongoDB, MySQL, Flyway</dd></div>
+        <div><dt>Testing</dt><dd>xUnit, JUnit, Selenium IDE, Jest, Testing Library, Playwright</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, Postman, IntelliJ IDEA, DBeaver, Chrome DevTools</dd></div>
+      </dl>
+      <div class="extras">
+        <p><strong>Spoken languages:</strong> Turkish (native), English (C1)</p>
+        <p><strong>Certificates:</strong> Kariyer Günleri 24 – Dönüşüm</p>
+        <p><strong>Volunteering:</strong> İlhamla Engelsiz Yarınlar – Konak Engelsiz Yaşam Köyü, supporting individuals with intellectual disabilities</p>
+      </div>
+    </section>
+
+    <!-- ============ 05 CONTACT ============ -->
+    <section id="contact" class="section container contact">
+      <h2><span class="num">05</span>Contact</h2>
+      <p>I'm open to internship and junior developer opportunities. Feel free to reach out.</p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:bahar--dokur@outlook.com">bahar--dokur@outlook.com</a>
+        <a class="btn" href="https://linkedin.com/in/bahardokur-0b6979270" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Bahar-dokur" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Bahar Dokur · Built with HTML &amp; CSS, hosted on GitHub Pages</p>
+  </footer>
+
+  <!-- Lightbox: click a gallery image to see it large -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img alt="">
+  </div>
+
+  <script>
+    const box = document.getElementById("lightbox");
+    const big = box.querySelector("img");
+    document.querySelectorAll(".gallery img, .card img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        big.src = img.src;
+        big.alt = img.alt;
+        box.hidden = false;
+      });
+    });
+    box.addEventListener("click", function () { box.hidden = true; });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") box.hidden = true; });
+  </script>
+
+</body>
+</html>
