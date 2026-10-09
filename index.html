@@ -105,23 +105,8 @@
     <section id="projects" class="section container">
       <h2><span class="num">03</span>Projects</h2>
 
-      <!-- FEATURED PROJECT: video + image gallery -->
+      <!-- FEATURED PROJECT -->
       <article class="featured">
-        <div class="featured-media">
-          <!-- Put your demo at assets/videos/senior-project-demo.mp4 (under ~50 MB) -->
-          <video controls preload="metadata" poster="assets/projects/senior-project.svg">
-            <source src="assets/videos/senior-project-demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="gallery">
-            <!-- Replace each .svg with your own screenshot (.png / .jpg) -->
-            <img src="assets/projects/senior-1.svg" alt="Senior Project screenshot 1" loading="lazy">
-            <img src="assets/projects/senior-2.svg" alt="Senior Project screenshot 2" loading="lazy">
-            <img src="assets/projects/senior-3.svg" alt="Senior Project screenshot 3" loading="lazy">
-            <img src="assets/projects/senior-4.svg" alt="Senior Project screenshot 4" loading="lazy">
-            <img src="assets/projects/senior-5.svg" alt="Senior Project screenshot 5" loading="lazy">
-          </div>
-        </div>
         <div class="featured-body">
           <p class="label">Featured project</p>
           <h3>Senior Project Management &amp; Evaluation System</h3>
@@ -133,16 +118,11 @@
             <li>Automated frontend and end-to-end tests with Jest, Testing Library and Playwright.</li>
           </ul>
           <ul class="chips"><li>React</li><li>REST APIs</li><li>JWT</li><li>Jest</li><li>Playwright</li></ul>
-          <div class="links">
-            <a href="https://YOUR-LIVE-DEMO-LINK" target="_blank" rel="noopener">Live demo ↗</a>
-            <a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a>
-          </div>
         </div>
       </article>
 
       <div class="grid">
         <article class="card">
-          <img src="assets/projects/icecek-dukkani.svg" alt="İçecek Dükkanı app screenshot" loading="lazy">
           <div class="card-body">
             <h3>İçecek Dükkanı – Ordering &amp; Distribution Platform</h3>
             <p>Customer and field-staff mobile apps, an admin panel and a central .NET API for orders, returns, deposits and distribution. Professional work at Pixel Yazılım.</p>
@@ -151,46 +131,42 @@
         </article>
 
         <article class="card">
-          <img src="assets/projects/meeting-room.svg" alt="Meeting Room Management System screenshot" loading="lazy">
           <div class="card-body">
             <h3>Meeting Room Management System</h3>
             <p>Reservation workflows, calendar-based availability and role/permission management, built during my internship at Yaşar Bilgi Sistem.</p>
             <ul class="chips"><li>Spring Boot</li><li>React</li><li>PostgreSQL</li></ul>
+            <div class="links">
+              <a href="https://github.com/elifnurbeycan/visitor-meeting-management" target="_blank" rel="noopener">Backend code ↗</a>
+              <a href="https://github.com/altankocdev/visitor-meeting-web-app" target="_blank" rel="noopener">Frontend code ↗</a>
+            </div>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/projects/tea-maker.svg" alt="Tea Maker desktop application screenshot" loading="lazy">
           <div class="card-body">
             <h3>Design Pattern-Driven Tea Maker</h3>
             <p>Java desktop app using MVC, State, Decorator and Observer patterns, with MySQL-backed consumption data and timer-based state transitions.</p>
             <ul class="chips"><li>Java</li><li>MySQL</li><li>Design Patterns</li></ul>
-            <div class="links"><a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a></div>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/projects/mylibrary.svg" alt="MyLibrary application screenshot" loading="lazy">
           <div class="card-body">
             <h3>MyLibrary – Personal Book Tracker</h3>
             <p>Java Swing app with authentication, role-based access, CRUD operations and author-book relationships, documented with UML diagrams and an SRS.</p>
             <ul class="chips"><li>Java Swing</li><li>MySQL</li><li>UML</li></ul>
-            <div class="links"><a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a></div>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/projects/izmirim-kart.svg" alt="İzmirim Kart test results" loading="lazy">
           <div class="card-body">
             <h3>İzmirim Kart Web Testing</h3>
             <p>Automated unit and UI tests with JUnit and Selenium, applying Boundary Value Analysis and Equivalence Partitioning to authentication and balance operations.</p>
             <ul class="chips"><li>JUnit</li><li>Selenium</li><li>Test Design</li></ul>
-            <div class="links"><a href="https://github.com/Bahar-dokur/REPO-NAME" target="_blank" rel="noopener">Code ↗</a></div>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/projects/bird-observation.svg" alt="Bird Observation database diagram" loading="lazy">
           <div class="card-body">
             <h3>Bird Observation &amp; Species Database</h3>
             <p>Normalized relational database for species and observations, with multi-entity schema design and SQL queries for reporting.</p>
@@ -234,26 +210,6 @@
   <footer class="footer">
     <p>© 2026 Bahar Dokur · Built with HTML &amp; CSS, hosted on GitHub Pages</p>
   </footer>
-
-  <!-- Lightbox: click a gallery image to see it large -->
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox-close" aria-label="Close">×</button>
-    <img alt="">
-  </div>
-
-  <script>
-    const box = document.getElementById("lightbox");
-    const big = box.querySelector("img");
-    document.querySelectorAll(".gallery img, .card img").forEach(function (img) {
-      img.addEventListener("click", function () {
-        big.src = img.src;
-        big.alt = img.alt;
-        box.hidden = false;
-      });
-    });
-    box.addEventListener("click", function () { box.hidden = true; });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") box.hidden = true; });
-  </script>
 
 </body>
 </html>
