@@ -14,3 +14,4 @@ assets/Bahar_Dokur_CV.pdf
 assets/projects/      project screenshots
 assets/videos/        project demo videos (.mp4)
 ```
+
