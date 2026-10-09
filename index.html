@@ -124,24 +124,41 @@
         </div>
       </article>
 
+      <article class="featured with-media">
+        <div class="featured-media">
+          <img class="main-shot" src="assets/projects/meeting-architecture-overview.jpg" alt="System architecture: React client, Spring Boot backend, PostgreSQL, Redis and SMTP">
+          <div class="gallery">
+            <img class="active" src="assets/projects/meeting-architecture-overview.jpg" alt="System architecture overview">
+            <img src="assets/projects/meeting-authorization-model.jpg" alt="Role and permission authorization model">
+            <img src="assets/projects/meeting-feature-modules.jpg" alt="Feature modules of the backend">
+            <img src="assets/projects/meeting-project-metrics.jpg" alt="Project metrics">
+          </div>
+          <p class="hint">Click a thumbnail to preview · click the large image to enlarge</p>
+        </div>
+        <div class="featured-body">
+          <p class="label">Internship project · Yaşar Bilgi Sistem</p>
+          <h3>Visitor &amp; Meeting Room Management System</h3>
+          <p>A multi-tenant web platform for company-wide meeting room reservations, built by a six-person team during my internship.</p>
+          <ul>
+            <li>Implemented role-based authorization and permission management with Flyway migrations on PostgreSQL.</li>
+            <li>Built reservation workflows, calendar-based availability and reservation management.</li>
+            <li>Improved dashboard and calendar usability, including consecutive time-slot selection.</li>
+            <li>Contributed to Excel-based user onboarding and user/role management.</li>
+          </ul>
+          <ul class="chips"><li>Java</li><li>Spring Boot</li><li>React</li><li>PostgreSQL</li><li>Flyway</li></ul>
+          <div class="links">
+            <a href="https://github.com/elifnurbeycan/visitor-meeting-management" target="_blank" rel="noopener">Backend code ↗</a>
+            <a href="https://github.com/altankocdev/visitor-meeting-web-app" target="_blank" rel="noopener">Frontend code ↗</a>
+          </div>
+        </div>
+      </article>
+
       <div class="grid">
         <article class="card">
           <div class="card-body">
             <h3>İçecek Dükkanı – Ordering &amp; Distribution Platform</h3>
             <p>Customer and field-staff mobile apps, an admin panel and a central .NET API for orders, returns, deposits and distribution. Professional work at Pixel Yazılım.</p>
             <ul class="chips"><li>Flutter</li><li>.NET 8</li><li>MongoDB</li><li>FCM</li></ul>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-body">
-            <h3>Meeting Room Management System</h3>
-            <p>Reservation workflows, calendar-based availability and role/permission management, built during my internship at Yaşar Bilgi Sistem.</p>
-            <ul class="chips"><li>Spring Boot</li><li>React</li><li>PostgreSQL</li></ul>
-            <div class="links">
-              <a href="https://github.com/elifnurbeycan/visitor-meeting-management" target="_blank" rel="noopener">Backend code ↗</a>
-              <a href="https://github.com/altankocdev/visitor-meeting-web-app" target="_blank" rel="noopener">Frontend code ↗</a>
-            </div>
           </div>
         </article>
 
@@ -213,6 +230,33 @@
   <footer class="footer">
     <p>© 2026 Bahar Dokur · Built with HTML &amp; CSS, hosted on GitHub Pages</p>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img alt="">
+  </div>
+
+  <script>
+    // Gallery: thumbnail -> main image, main image -> full-screen view
+    document.querySelectorAll(".featured-media").forEach(function (media) {
+      var main = media.querySelector(".main-shot");
+      media.querySelectorAll(".gallery img").forEach(function (thumb) {
+        thumb.addEventListener("click", function () {
+          main.src = thumb.src;
+          main.alt = thumb.alt;
+          media.querySelectorAll(".gallery img").forEach(function (t) { t.classList.remove("active"); });
+          thumb.classList.add("active");
+        });
+      });
+    });
+    var box = document.getElementById("lightbox");
+    var big = box.querySelector("img");
+    document.querySelectorAll(".main-shot").forEach(function (img) {
+      img.addEventListener("click", function () { big.src = img.src; big.alt = img.alt; box.hidden = false; });
+    });
+    box.addEventListener("click", function () { box.hidden = true; });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") box.hidden = true; });
+  </script>
 
 </body>
 </html>
